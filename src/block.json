@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "shb/archivetitle-author",
+	"version": "0.1.0",
+	"title": "Author archive title",
+	"category": "theme",
+	"icon": "admin-users",
+	"description": "Provides a block which shows the name of the current author on the author archive page.",
+	"supports": {
+		"html": false,
+		"align": ["wide"]
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"enum": ["wide"]
+		},
+		"classNameBase": {
+			"type": "string"
+		},
+		"textAlign": {
+			"type": "string",
+			"enum": ["left", "center", "right"]
+		}
+	},
+	"textdomain": "shb-archivetitle-author",
+	"editorScript": "file:./index.js"
+}
